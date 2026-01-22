@@ -1,5 +1,7 @@
 # TERRA
 
+![Uploading image.png…]()
+
 ## Project Overview:
 Terra is a virtual machine that is set up to display a web server at its most fundamental level
 *What it includes:*
