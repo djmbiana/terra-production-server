@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: 'Work Sans', sans-serif;
+  
+  background-color: #f7f6f9;
+
+  /* Moving squares: muted deep green for subtlety */
+  background-image:
+    linear-gradient(rgba(22,63,56,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(22,63,56,0.04) 1px, transparent 1px);
+
+  background-size: 48px 48px;
+  animation: square-drift 5s linear infinite; /* slow, subtle movement */
+
+  /* Center content */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  /* Text colors from palette */
+  color: #163f38;
+}
+
+@keyframes square-drift {
+  0% {
+    background-position: 0 0, 0 0;
+  }
+  100% {
+    background-position: 48px 48px, 48px 48px;
+  }
+}
+
+h1 {
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+p {
+  margin: 0;
+  font-weight: 400;
+  color: #98b6b0; 
+}
+
