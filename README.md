@@ -3,7 +3,8 @@
 ![1769008885891](https://github.com/user-attachments/assets/72e7cf15-f0ed-4928-8577-03ade242d0b7)
 
 ## Project Overview:
-Terra is a virtual machine that is set up to display a web server at its most fundamental level
+Terra is a virtual machine that is web server at its most fundamental level.
+
 *What it includes:*
 - Hardened Ubuntu Server 24.04 LTS base
 - Nginx web server with custom configuration
