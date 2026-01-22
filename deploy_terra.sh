@@ -32,11 +32,11 @@ sudo systemctl enable fail2ban
 echo ""
 echo "setting up monitoring..."
 sudo mkdir -p /var/log/terra
-sudo chown $USER:$USER /var/log/terra
+sudo chown $(whoami):$(whoami) /var/log/terra
 mkdir -p ~/scripts
 cp scripts/health_check.sh ~/scripts/
 chmod +x ~/scripts/health_check.sh
-(crontab -l 2>/dev/null; echo "0 * * * * ~/scripts/health_check.sh") | crontab -
+(crontab -l 2>/dev/null; echo "0 * * * * /home/$(whoami)/scripts/health_check.sh") | crontab -
 
 echo ""
 echo "configuring log rotation..."
